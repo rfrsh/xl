@@ -128,7 +128,7 @@ xl._tdClick = function (e){
 }
 xl._updateTDs = function (){
     for (var key in xl.dataObj){
-            if (xl.dataObj[key].charAt(0) == "=") {
+            if (String(xl.dataObj[key]).charAt(0) == "=") {
                 //console.log(xl.dataObj[key]);
                 var tt = 'td[data-cell="'+key+'"]';
                 var td =document.querySelector(tt);
